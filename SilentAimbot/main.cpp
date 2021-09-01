@@ -109,9 +109,9 @@ void AimSettings(char* parc)
 		silentaim = !silentaim;
 
 		if (silentaim)
-			displayTextScr(0x30, 0xB9, 0x0E, "Silent Aimbot is now ON.");
+			displayTextScr(0x30, 0xB9, 0x0E, "Silent Aim Aktif Edildi -J.");
 		else
-			displayTextScr(0xCC, 0x00, 0x00, "Silent Aimbot is now OFF.");
+			displayTextScr(0xCC, 0x00, 0x00, "Silent Aim Deaktif Edildi -J.");
 	}
 	else if (first.find("fov") != string::npos)
 	{
@@ -245,9 +245,9 @@ void MainLoop() // addMessageToChatWindow etc here won't bug out as it's in game
 		if (!silentaim_hideESP)
 		{
 			if (samp037)
-				addMessageToChatWindow(D3DCOLOR_XRGB(255, 255, 255), "{990000}Silent Aimbot. 037 Compat.");
+				addMessageToChatWindow(D3DCOLOR_XRGB(255, 255, 10), "{990000}Silent Aimbot. 037 Compat.");
 			else
-				addMessageToChatWindow(D3DCOLOR_XRGB(255, 255, 255), "{990000}Silent Aimbot.");
+				addMessageToChatWindow(D3DCOLOR_XRGB(255, 255, 10), "{990000}Silent Aimbot.");
 		}
 		
 		g_MainLoopInit = true;
